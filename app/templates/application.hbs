@@ -1,0 +1,5 @@
+{{#bs-form formLayout="horizontal" model=model onSubmit=(action "submit") horizontalLabelGridClass='col-sm-2'  as |form|}}
+	{{form.element controlType="textarea" label='foo' placeholder='foo' property="foo"}}
+	{{form.element controlType="text" label='bar' placeholder='bar' property="bar"}}
+{{/bs-form}}
+{{bs-button defaultText='RESET' type="danger" onClick=(action "revert")}}
